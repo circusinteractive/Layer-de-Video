@@ -1,0 +1,52 @@
+#lightbox{
+  background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: .65; /* Standards Compliant Browsers */
+    filter: alpha(opacity=65); /* IE 7 and Earlier */
+    /* Next 2 lines IE8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
+    height:100%;
+    width:100%;
+    z-index:30;
+ 
+}
+ 
+#lightbox-panel-youtube{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 457px;
+    height: 425px;
+    margin-top: -212px; /* mitad de height */
+    margin-left: -228px; /* mitad de width */
+    overflow: hidden;
+    display:none;
+    z-index:1001;
+    background:url(../img/bg_youtube.png) #000;
+    background-position:top center;
+    background-repeat:no-repeat;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+    opacity:0.8;
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90); 
+}
+ 
+#lightbox-cerrar-youtube{
+  	background: url("../img/blank.gif") no-repeat scroll left top transparent;
+    cursor: pointer;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    width: 32px;
+    z-index: 1002;
+}
+ 
+#lightbox-contenido-youtube{
+    font-family: 'formataitalic';
+    color:#fff;
+    margin-top:58px;
+    margin-left:23px;
+}
